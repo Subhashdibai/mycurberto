@@ -1,0 +1,315 @@
+.featured-wrapper {
+  background: #0f0f0f;
+  padding: 160px 80px;
+}
+
+/* .featured-title {
+  width: 100%;
+  text-align: center;        
+  font-size: 56px;            
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  margin: 0 auto 60px;        
+  color: #111;
+} */
+
+
+.featured-title {
+  color: #ffffff;
+  font-size: 56px;
+   font-weight: 600;
+  font-size: 64px;
+  font-weight: 500;
+ 
+  margin-bottom: 150px;
+}
+
+/* GRID */
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 140px 100px;
+}
+
+/* CARD */
+.featured-card {
+  position: relative;
+}
+
+.offset-up {
+  transform: translateY(-100px);
+}
+
+.offset-down {
+  transform: translateY(100px);
+}
+
+/* MEDIA */
+.media-box {
+  height: 720px;
+  border-radius: 36px;
+  overflow: hidden;
+  background: #1a1a1a;
+  outline: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.media-box img,
+.media-box video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* TEXT */
+.card-content {
+  margin-top: 26px;
+}
+
+.card-content h3 {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.card-content p {
+  color: #9b9b9b;
+  font-size: 15px;
+  margin-top: 6px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .featured-grid {
+    grid-template-columns: 1fr;
+    gap: 80px;
+    height: 520;
+  }
+
+  .offset-up,
+  .offset-down {
+    transform: translateY(0);
+  }
+
+  .featured-title {
+    font-size: 42px;
+  }
+}
+
+
+.featured-card.small-height .media-box {
+  height: 520px;   /* 👈 yahan kam–zyada kar sakte ho */
+}
+
+.featured-card .media-box {
+  height: 650px;   /* baaki cards default */
+}
+
+.featured-card video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.view-all-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px 0 0;   /* 👈 Cuberto jaisa tight spacing */
+}
+
+.view-all-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 34px;       /* 👈 height yahin kam hui */
+  min-height: 48px;         /* 👈 Cuberto approx */
+
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 999px;
+
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+
+  color: #fff;
+  background: transparent;
+  text-decoration: none;
+
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.view-all-btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+
+
+/* .view-all-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 120px 0 40px;  
+}
+
+.view-all-btn {
+  padding: 22px 48px;
+  border: 1.5px solid rgba(255, 255, 255, 0.6);
+  border-radius: 60px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  background: transparent;
+  transition: all 0.4s ease;
+  backdrop-filter: blur(2px);
+}
+
+
+.view-all-btn:hover {
+  background: #fff;
+  color: #000;
+} */
+
+
+
+
+/* .featured-wrapper {
+  background: #0e0e0e;
+  padding: 160px 80px;
+}
+
+.featured-title {
+  color: #fff;
+  font-size: 64px;
+  font-weight: 500;
+  margin-bottom: 120px;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 120px 80px;
+}
+
+.featured-card {
+  width: 100%;
+}
+
+.offset-up {
+  transform: translateY(-80px);
+}
+
+.offset-down {
+  transform: translateY(80px);
+}
+
+.media-box {
+  width: 100%;
+  height: 520px;
+  border-radius: 28px;
+  overflow: hidden;
+}
+
+.media-box img,
+.media-box video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  margin-top: 28px;
+}
+
+.card-content h3 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.card-content p {
+  color: #b5b5b5;
+  font-size: 15px;
+  margin-top: 6px;
+}
+
+/* Responsive */
+/* @media (max-width: 900px) {
+  .featured-grid {
+    grid-template-columns: 1fr;
+    gap: 80px;
+  }
+
+  .offset-up,
+  .offset-down {
+    transform: translateY(0);
+  }
+
+  .featured-title {
+    font-size: 42px;
+  }
+}  */
+
+
+
+/* .featured-wrapper {
+  background: #0b0b0b;
+  padding: 140px 60px;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+}
+
+
+.featured-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.featured-title {
+  font-size: 64px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 120px;
+}
+
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 100px;
+  row-gap: 160px;
+}
+
+
+.featured-card {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.image-placeholder {
+  width: 100%;
+  height: 620px;
+  background: #1a1a1a;
+  border-radius: 28px;
+}
+
+
+.card-content {
+  margin-top: 28px;
+}
+
+.card-content h3 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.card-content p {
+  font-size: 15px;
+  color: #9b9b9b;
+} */
