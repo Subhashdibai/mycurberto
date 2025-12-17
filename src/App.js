@@ -5,9 +5,12 @@ import Hero from "./components/Hero";
 import AboutSection from "./components/AboutSection";
 import VideoShowcase from "./components/VideoShowcase";
 import FeaturedProjects from "./components/FeaturedProjects";
+<<<<<<< HEAD
 import ServicesSection from "./components/ServicesSection";
 import BlogSection from "./components/BlogSection";
 import IdeaSection from "./components/IdeaSection";
+=======
+>>>>>>> d56611a55dd50bffac798a8efe1b5e4ecdd9e7f8
 
 import VideoPage from "./pages/VideoPage";
 
@@ -29,9 +32,12 @@ function App() {
               <VideoShowcase />
               <AboutSection />
                <FeaturedProjects />
+<<<<<<< HEAD
                 <ServicesSection />
                 <BlogSection />
                  <IdeaSection />
+=======
+>>>>>>> d56611a55dd50bffac798a8efe1b5e4ecdd9e7f8
             </>
           }
         />
