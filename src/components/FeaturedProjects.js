@@ -85,6 +85,7 @@ export default function FeaturedProjects() {
               ${index % 2 === 0 ? "offset-up" : "offset-down"}
            `}
           >
+            <div className="service-card cursor-target">
             <div className="media-box">
               <video
                 src={item.src}
@@ -93,6 +94,7 @@ export default function FeaturedProjects() {
                 loop
                 playsInline
               />
+            </div>
             </div>
 
             <div className="card-content">

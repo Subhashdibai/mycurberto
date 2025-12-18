@@ -1,0 +1,48 @@
+/* .dot-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+
+  background: #000;
+  pointer-events: none;
+  z-index: 9998;
+
+  transform: translate(-50%, -50%);
+  transition: opacity 0.2s ease;
+}
+
+
+.dot-hidden {
+  opacity: 0;
+} */
+
+
+.dot-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+
+  background: white;
+  mix-blend-mode: difference;
+
+  /* 🔒 SAFETY NET */
+  box-shadow: 0 0 0 1px rgb(0, 0, 0);
+
+  pointer-events: none;
+  z-index: 9999;
+
+  transform: translate(-50%, -50%);
+  transition: transform 0.15s ease, opacity 0.2s ease;
+}
+
+.dot-hidden {
+  opacity: 0;
+}

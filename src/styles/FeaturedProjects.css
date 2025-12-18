@@ -3,16 +3,7 @@
   padding: 160px 80px;
 }
 
-/* .featured-title {
-  width: 100%;
-  text-align: center;        
-  font-size: 56px;            
-  font-weight: 600;
-  line-height: 1.1;
-  letter-spacing: -1px;
-  margin: 0 auto 60px;        
-  color: #111;
-} */
+
 
 
 .featured-title {
@@ -124,11 +115,11 @@
   align-items: center;
   justify-content: center;
 
-<<<<<<< HEAD
+
   padding: 20px 50px;       /* 👈 height yahin kam hui */
-=======
+
   padding: 14px 34px;       /* 👈 height yahin kam hui */
->>>>>>> d56611a55dd50bffac798a8efe1b5e4ecdd9e7f8
+
   min-height: 48px;         /* 👈 Cuberto approx */
 
   border: 1px solid rgba(255, 255, 255, 0.55);

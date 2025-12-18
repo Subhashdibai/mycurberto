@@ -1,24 +1,33 @@
-
 .video-section {
-  margin: 100px auto;
-  width: 85vw;
-  height: 100vh;        
   position: relative;
+
+  width: 100%;
+  max-width: 1600px;
+
+  height: 85vh;               /* Cuberto jaisa look */
+  margin: 120px auto 0;       /* niche se start */
+
+  padding: 0 40px;            /* white gap sides */
   cursor: none;
 }
+
 
 .video-wrapper {
   width: 100%;
   height: 100%;
-  border-radius: 30px;
+
+  border-radius: 48px;        /* Cuberto radius */
   overflow: hidden;
+  background: #000;
 }
 
 .video-wrapper video {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
+
 
 
 .play-cursor {
@@ -67,6 +76,18 @@
   justify-content: center;
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  .video-section {
+    height: 60vh;
+    padding: 0 20px;
+    margin-top: 80px;
+  }
+
+  .video-wrapper {
+    border-radius: 32px;
+  }
+}
+
 
 /* .video-section {
   margin: 80px;

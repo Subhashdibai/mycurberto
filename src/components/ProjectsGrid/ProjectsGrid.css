@@ -1,0 +1,111 @@
+/* ==============================
+   WRAPPER (White theme)
+================================ */
+.projects-wrapper {
+  background: #ffffff;          /* black → white */
+  padding: 160px 80px;
+}
+
+/* ==============================
+   GRID
+================================ */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 140px 100px;
+}
+
+/* ==============================
+   CARD
+================================ */
+.project-card {
+  position: relative;
+}
+
+.offset-up {
+  transform: translateY(-100px);
+}
+
+.offset-down {
+  transform: translateY(100px);
+}
+
+/* ==============================
+   MEDIA
+================================ */
+.media-box {
+  height: 720px;
+  border-radius: 36px;
+  overflow: hidden;
+  background: #f3f3f3;        /* dark → light */
+  outline: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.media-box img,
+.media-box video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ==============================
+   TEXT
+================================ */
+.card-content {
+  margin-top: 26px;
+}
+
+.card-content h3 {
+  color: #000000;              /* white → black */
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.card-content p {
+  color: #6b6b6b;              /* light grey */
+  font-size: 15px;
+  margin-top: 6px;
+}
+
+/* ==============================
+   HEIGHT VARIATIONS
+================================ */
+
+/* same logic as FeaturedProjects */
+.project-card.small-height .media-box {
+  height: 520px;
+}
+
+/* default cards */
+.project-card .media-box {
+  height: 650px;
+}
+
+/* 👉 OPTIONAL: 9 extra cards agar alag size chahiye */
+.project-card.extra-height .media-box {
+  height: 700px;
+}
+
+/* ==============================
+   VIDEO
+================================ */
+.project-card video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ==============================
+   RESPONSIVE
+================================ */
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 80px;
+  }
+
+  .offset-up,
+  .offset-down {
+    transform: translateY(0);
+  }
+}

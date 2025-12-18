@@ -1,0 +1,145 @@
+.footer {
+  background: black;
+  color: white;
+  padding: 120px 80px 60px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+  position: relative;
+}
+
+/* LEFT */
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer-contacts {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.pill {
+  padding: 12px 24px;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 40px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pill:hover {
+  background: white;
+  color: black;
+}
+
+.footer-address {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.footer-address p {
+  margin: 4px 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.label {
+  opacity: 0.5;
+  margin-bottom: 6px;
+}
+
+.footer-bottom {
+  display: flex;
+  gap: 20px;
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+/* RIGHT */
+.footer-right {
+  display: flex;
+  gap: 80px;
+  justify-content: flex-end;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 16px;
+}
+
+.footer-links span {
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.footer-links span:hover {
+  opacity: 0.6;
+}
+
+/* SOCIALS */
+.footer-socials {
+  position: absolute;
+  right: 80px;
+  bottom: 40px;
+  display: flex;
+  gap: 14px;
+}
+
+.footer-socials span {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.footer-socials span:hover {
+  background: white;
+  color: black;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .footer {
+    grid-template-columns: 1fr;
+    padding: 80px 24px 40px;
+  }
+
+  .footer-right {
+    justify-content: flex-start;
+    gap: 60px;
+  }
+
+  .footer-socials {
+    position: static;
+    margin-top: 40px;
+  }
+}
+
+
+.footer-socials {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-socials a {
+  font-size: 20px;
+  color: #000;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-socials a:hover {
+  transform: translateY(-4px);
+  color: #555;
+}
+

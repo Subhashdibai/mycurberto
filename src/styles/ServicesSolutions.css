@@ -1,0 +1,84 @@
+.solutions-wrapper {
+  max-width: 1400px;
+  margin: 180px auto;
+  padding: 0 60px;
+}
+
+/* TITLE */
+.solutions-title {
+  font-size: 72px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/* 👇 TITLE DIVIDER (MISSING PART) */
+.solutions-title-divider {
+  width: 100%;
+  height: 1px;
+  background: #000;
+  margin-bottom: 30px;
+}
+
+/* ONE ROW */
+.solution-item {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  align-items: center;
+  padding: 80px 0;
+}
+
+/* LEFT */
+.solution-label {
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #000;
+  margin-top: 50px;
+}
+
+/* RIGHT */
+.solution-right {
+  max-width: 520px;
+}
+
+.solution-text {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+/* BUTTON */
+.solution-btn {
+  padding: 18px 44px;
+  border-radius: 999px;
+  border: 1.5px solid #000;
+  background: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.solution-btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* ROW DIVIDER */
+.solution-divider {
+  height: 1px;
+  width: 100%;
+  background: #000;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .solutions-title {
+    font-size: 48px;
+  }
+
+  .solution-item {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
