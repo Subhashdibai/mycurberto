@@ -1,29 +1,35 @@
 /* =========================
-   SERVICES SECTION WRAPPER
+   WRAPPER
 ========================= */
 
 .services-wrapper {
-  background: #fff;
+  background: #ffffff;
   padding: 160px 0;
 }
 
 .services-inner {
-  max-width: 1400px;
-  margin: auto;
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 0 60px;
 }
 
 /* =========================
-   HEADER
+   TOP AREA
 ========================= */
+
+.services-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-start;
+  margin-bottom: 120px;
+}
 
 .services-header {
   max-width: 520px;
-  margin-bottom: 140px;
 }
 
 .services-header h2 {
-  font-size: 64px;
+  font-size: 72px;
   font-weight: 700;
   margin-bottom: 24px;
 }
@@ -32,101 +38,21 @@
   font-size: 19px;
   line-height: 1.6;
   font-weight: 500;
+  color: #111;
 }
 
 /* =========================
-   GRID
+   BUTTON
 ========================= */
-
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 120px 100px;
-}
-
-/* =========================
-   ITEM (OFFSET HOLDER)
-========================= */
-
-.service-item {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-
-.service-item:nth-child(odd) {
-  transform: translateY(-80px);
-}
-
-.service-item:nth-child(even) {
-  transform: translateY(80px);
-}
-
-/* =========================
-   VIDEO CARD (ONLY VIDEO)
-========================= */
-
-.service-card {
-  background: #ffffff;
-  border-radius: 48px;
-  border: 1px solid rgba(0, 0, 0, 0.33);
-
-  box-shadow:
-    0 30px 80px rgba(0, 0, 0, 0.08),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.28);
-
-  overflow: hidden;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-/* =========================
-   VIDEO
-========================= */
-
-.service-media {
-  height: 720px;
-}
-
-.service-media video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Smaller height only for Motion & 3D */
-.service-card.small-height .service-media {
-  height: 550px;
-}
-
-/* =========================
-   TEXT (OUTSIDE CARD)
-========================= */
-
-.service-content h3 {
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 12px;
-}
-
-.service-content p {
-  font-size: 18px;
-  font-weight: 500;
-  color: #444;
-}
-
-/* =========================
-   VIEW ALL BUTTON
-========================= */
-
-.view-all-wrapper {
+.services-bottom {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 80px;
+  margin-top: 160px;
 }
 
 .view-all-btn {
-  padding: 30px 70px;
+  padding: 60px 100px;
   border-radius: 999px;
   border: 1.5px solid #000;
   background-color: #fff;
@@ -143,26 +69,163 @@
   background-color: #000;
   color: #fff;
 }
+/* .top-btn {
+  justify-self: end;
+  padding: 28px 64px;
+  border-radius: 999px;
+  border: 1.5px solid #000;
+  background: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.top-btn:hover {
+  background: #000;
+  color: #fff;
+} */
+
+/* =========================
+   GRID
+========================= */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 140px 120px;
+}
+
+/* =========================
+   ITEM (STAGGER)
+========================= */
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.service-item:nth-child(odd) {
+  transform: translateY(-60px);
+}
+
+.service-item:nth-child(even) {
+  transform: translateY(60px);
+}
+
+/* =========================
+   CARD
+========================= */
+
+.service-card {
+  background: #fff;
+  border-radius: 48px;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  overflow: hidden;
+
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.08),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.28);
+
+  transition: transform 0.45s ease, box-shadow 0.45s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    0 50px 120px rgba(0, 0, 0, 0.12),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+}
+
+/* =========================
+   VIDEO
+========================= */
+
+.service-media {
+  height: 640px;
+}
+
+.service-media video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-card.small-height .service-media {
+  height: 520px;
+}
+
+/* =========================
+   TEXT
+========================= */
+
+.service-content h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.service-content p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #444;
+}
 
 /* =========================
    RESPONSIVE
 ========================= */
 
 @media (max-width: 1024px) {
-  .services-grid {
-    grid-template-columns: 1fr;
-    gap: 120px;
+  .services-wrapper {
+    padding: 120px 0;
   }
 
-  .service-item:nth-child(odd),
-  .service-item:nth-child(even) {
-    transform: translateY(0);
+  .services-inner {
+    padding: 0 32px;
+  }
+
+  .services-top {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .top-btn {
+    justify-self: start;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 100px;
+  }
+
+  .service-item {
+    transform: translateY(0) !important;
   }
 
   .service-media {
     height: 420px;
   }
 }
+
+@media (max-width: 480px) {
+  .services-header h2 {
+    font-size: 48px;
+  }
+
+  .services-header p {
+    font-size: 16px;
+  }
+
+  .service-content h3 {
+    font-size: 22px;
+  }
+
+  .service-content p {
+    font-size: 16px;
+  }
+}
+
 
 
 

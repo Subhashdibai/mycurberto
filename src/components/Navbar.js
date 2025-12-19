@@ -35,6 +35,7 @@ export default function Navbar() {
     <nav className="nav-menu">
       <NavLink to="/services">Services</NavLink>
       <NavLink to="/projects">Projects</NavLink>
+      
       <NavLink to="/company">Company</NavLink>
       <NavLink to="/blog">Blog</NavLink>
       <NavLink to="/contact">Contacts</NavLink>

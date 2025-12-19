@@ -13,6 +13,10 @@ import ExploreCursor from "./components/cursor/ExploreCursor";
 import DotCursor from "./components/cursor/DotCursor";
 import Services from "./pages/Services/Services";
 import Projects from "./pages/Projects/Projects";
+import Company from "./pages/Company/Company";
+import Blog from "./pages/Blog/Blog";
+import Contact from "./pages/Contact/Contact";
+
 
 
 
@@ -26,9 +30,9 @@ function App() {
       <main style={{ paddingTop: "80px" }}>
         <Routes>
                   <Route path="/projects" element={<Projects />}
-               
                  />
                   {/* <Route path="/projects" element={<FeaturedProjects />} /> */}
+
 
           <Route
             path="/"
@@ -50,6 +54,9 @@ function App() {
             }
           />
            <Route path="/services" element={<Services />} />
+              <Route path="/company" element={<Company />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/contact" element={<Contact />} />
 
           <Route path="/video" element={<VideoPage />} />
         </Routes>

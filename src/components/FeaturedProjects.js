@@ -1,6 +1,8 @@
+// import { useNavigate } from "react-router-dom";
 import "../styles/FeaturedProjects.css";
 
 const projects = [
+  
  {
     src: "/projects/phone.mp4",
     title: "E-Commerce App",

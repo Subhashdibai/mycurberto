@@ -1,4 +1,5 @@
 import "../styles/ServicesSection.css";
+import { useNavigate } from "react-router-dom";
 
 const services = [
   {
@@ -19,49 +20,134 @@ const services = [
 ];
 
 export default function ServicesSection() {
+  const navigate = useNavigate(); // ✅ ADD THIS
+
   return (
     <section className="services-wrapper">
       <div className="services-inner">
 
-        {/* Header */}
-        <div className="services-header">
-          <h2>Our services</h2>
-          <p>
-            From motion design to AI-powered products — we design and build
-            interfaces for the future.
-          </p>
+        {/* TOP AREA */}
+        <div className="services-top">
+          <div className="services-header">
+            <h2>Our services</h2>
+            <p>
+              From motion design to AI-powered products — we design and build
+              interfaces for the future.
+            </p>
+          </div>
+
+          {/* <button className="top-btn">View all services</button> */}
         </div>
 
-        {/* Cards */}
         <div className="services-grid">
           {services.map((item, i) => (
-            <div
-              key={i}
-              className={`service-item ${
-                i === 1 ? "offset-down" : "offset-up"
-              }`}
-            >
-              {/* ✅ VIDEO CARD ONLY */}
+            <div key={i} className="service-item">
               <div
                 className={`service-card ${
                   item.title === "Motion & 3D" ? "small-height" : ""
                 }`}
               >
-                           <div className="service-card cursor-target">
                 <div className="service-media">
-                  <video
-                    src={item.media}
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                  />
+                  <video src={item.media} autoPlay muted loop playsInline />
                 </div>
               </div>
 
+              <div className="service-content">
+                <h3>{item.title}</h3>
+                <p>{item.desc}</p>
+              </div>
             </div>
+          ))}
+        </div>
 
-                {/* <div className="service-media">
+        {/* 👇 ONLY CHANGE HERE */}
+        <div className="services-bottom">
+          <button
+            className="view-all-btn"
+            onClick={() => navigate("/services")}
+          >
+            View all services
+          </button>
+        </div>
+
+      </div>
+    </section>
+  );
+}
+
+
+
+
+
+
+
+
+
+
+// import "../styles/ServicesSection.css";
+
+// const services = [
+//   {
+//     title: "Product design",
+//     desc: "UI · UX · Design systems",
+//     media: "/services/service1.mp4",
+//   },
+//   {
+//     title: "Development",
+//     desc: "Web · Mobile · AI products",
+//     media: "/services/service2.mp4",
+//   },
+//   {
+//     title: "Motion & 3D",
+//     desc: "Animation · Visual storytelling",
+//     media: "/services/service3.mp4",
+//   },
+// ];
+
+// export default function ServicesSection() {
+//   return (
+//     <section className="services-wrapper">
+//       <div className="services-inner">
+
+//         {/* Header */}
+//         <div className="services-header">
+//           <h2>Our services</h2>
+//           <p>
+//             From motion design to AI-powered products — we design and build
+//             interfaces for the future.
+//           </p>
+//         </div>
+
+//         {/* Cards */}
+//         <div className="services-grid">
+//           {services.map((item, i) => (
+//             <div
+//               key={i}
+//               className={`service-item ${
+//                 i === 1 ? "offset-down" : "offset-up"
+//               }`}
+//             >
+//               {/* ✅ VIDEO CARD ONLY */}
+//               <div
+//                 className={`service-card ${
+//                   item.title === "Motion & 3D" ? "small-height" : ""
+//                 }`}
+//               >
+//                            <div className="service-card cursor-target">
+//                 <div className="service-media">
+//                   <video
+//                     src={item.media}
+//                     autoPlay
+//                     muted
+//                     loop
+//                     playsInline
+//                   />
+//                 </div>
+//               </div>
+
+//             </div>
+
+                /* <div className="service-media">
                   <video
                     src={item.media}
                     autoPlay
@@ -70,9 +156,9 @@ export default function ServicesSection() {
                     playsInline
                   />
                 </div>
-              </div> */}
+              </div> 
 
-              {/* ✅ TEXT COMPLETELY OUTSIDE CARD */}
+             
               <div className="service-content">
                 <h3>{item.title}</h3>
                 <p>{item.desc}</p>
@@ -82,7 +168,7 @@ export default function ServicesSection() {
         </div>
       </div>
 
-      {/* Button */}
+      
       <div className="view-all-wrapper">
         <button className="view-all-btn">View all services</button>
       </div>
@@ -117,7 +203,7 @@ export default function ServicesSection() {
 //     <section className="services-wrapper">
 //       <div className="services-inner">
 
-//         {/* Header */}
+//         {/* Header */
 //         <div className="services-header">
 //           <h2>Our services</h2>
 //           <p>
