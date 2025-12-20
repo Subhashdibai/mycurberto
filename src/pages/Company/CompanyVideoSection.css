@@ -1,0 +1,53 @@
+.company-video-section {
+  width: 100%;
+  padding: 120px 20px;
+  background: #fff;
+}
+
+.video-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.company-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* ===================== */
+/* RESPONSIVE */
+/* ===================== */
+
+@media (max-width: 1024px) {
+  .company-video-section {
+    padding: 90px 20px;
+  }
+
+  .video-wrapper {
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .company-video-section {
+    padding: 70px 16px;
+  }
+
+  .video-wrapper {
+    border-radius: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .company-video-section {
+    padding: 50px 12px;
+  }
+
+  .video-wrapper {
+    border-radius: 12px;
+  }
+}

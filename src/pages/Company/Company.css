@@ -23,10 +23,11 @@
 .company-image {
   width: 100%;
   padding: 0 40px;
+  margin-top: -15vh;
 }
 
 .company-image img {
-  width: 100%;
+  width: 96%;
   border-radius: 30px;
 }
 
@@ -100,3 +101,292 @@
     font-size: 32px;
   }
 } 
+
+
+
+
+
+
+
+/* ===============================
+   TEAM IMAGE SECTION (CUBERTO STYLE)
+================================ */
+
+.company-team {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 120px;
+  padding: 160px 80px;
+  align-items: center;
+}
+
+.team-image {
+  position: relative;
+}
+
+.team-image img {
+  width: 100%;
+  height: 720px;
+  object-fit: cover;
+  border-radius: 36px;
+}
+
+/* slight visual difference like Cuberto */
+.team-image.left img {
+  border-top-left-radius: 48px;
+}
+
+.team-image.right img {
+  border-top-right-radius: 48px;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 1024px) {
+  .company-team {
+    grid-template-columns: 1fr;
+    gap: 80px;
+    padding: 120px 40px;
+  }
+
+  .team-image img {
+    height: 520px;
+  }
+}
+
+@media (max-width: 600px) {
+  .company-team {
+    padding: 80px 20px;
+  }
+
+  .team-image img {
+    height: 420px;
+    border-radius: 24px;
+  }
+}
+/* staggered vertical offset like Cuberto */
+.team-image.left {
+  transform: translateY(-80px);
+}
+
+.team-image.right {
+  transform: translateY(80px);
+}
+@media (max-width: 1024px) {
+  .team-image.left,
+  .team-image.right {
+    transform: translateY(0);
+  }
+}
+
+
+
+
+/* =========================
+   DARE SECTION (Cuberto)
+========================= */
+
+.company-dare {
+  padding: 180px 120px;
+  background: #ffffff;
+}
+
+/* Big heading */
+.dare-heading {
+  font-size: 88px;
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -2px;
+  margin-bottom: 60px;
+}
+
+/* Horizontal line */
+.dare-divider {
+  width: 100%;
+  height: 1px;
+  background: #111;
+  margin-bottom: 80px;
+}
+
+/* Two-column layout */
+.dare-content {
+  display: grid;
+  grid-template-columns: 1fr 2.2fr;
+  gap: 120px;
+  align-items: flex-start;
+}
+
+/* Left small label */
+.dare-label span {
+  display: block;
+  font-size: 14px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: #111;
+  margin-bottom: 6px;
+}
+
+/* Right text */
+.dare-text p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #111;
+  margin-bottom: 36px;
+  max-width: 720px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1200px) {
+  .company-dare {
+    padding: 140px 80px;
+  }
+
+  .dare-heading {
+    font-size: 68px;
+  }
+
+  .dare-content {
+    gap: 80px;
+  }
+}
+
+@media (max-width: 900px) {
+  .company-dare {
+    padding: 120px 40px;
+  }
+
+  .dare-heading {
+    font-size: 52px;
+  }
+
+  .dare-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .dare-label {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .dare-heading {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+
+  .dare-text p {
+    font-size: 18px;
+  }
+}
+
+
+/* =========================
+   DARE SECTION (Cuberto)
+========================= */
+
+.company-dare {
+  padding: 180px 120px;
+  background: #ffffff;
+}
+
+/* Big heading */
+.dare-heading {
+  font-size: 88px;
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -2px;
+  margin-bottom: 60px;
+}
+
+/* Horizontal line */
+.dare-divider {
+  width: 100%;
+  height: 1px;
+  background: #111;
+  margin-bottom: 80px;
+}
+
+/* Two-column layout */
+.dare-content {
+  display: grid;
+  grid-template-columns: 1fr 2.2fr;
+  gap: 120px;
+  align-items: flex-start;
+}
+
+/* Left small label */
+.dare-label span {
+  display: block;
+  font-size: 14px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: #111;
+  margin-bottom: 6px;
+}
+
+/* Right text */
+.dare-text p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #111;
+  margin-bottom: 36px;
+  max-width: 720px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1200px) {
+  .company-dare {
+    padding: 140px 80px;
+  }
+
+  .dare-heading {
+    font-size: 68px;
+  }
+
+  .dare-content {
+    gap: 80px;
+  }
+}
+
+@media (max-width: 900px) {
+  .company-dare {
+    padding: 120px 40px;
+  }
+
+  .dare-heading {
+    font-size: 52px;
+  }
+
+  .dare-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .dare-label {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .dare-heading {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+
+  .dare-text p {
+    font-size: 18px;
+  }
+}
+
+
+
+

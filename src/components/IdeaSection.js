@@ -1,5 +1,5 @@
 import "../styles/IdeaSection.css";
-
+import { Link } from "react-router-dom"; // 👈 ADD THIS
 
 const IdeaSection = () => {
   return (
@@ -21,9 +21,10 @@ const IdeaSection = () => {
           Have <br /> an idea?
         </h1>
 
-        <button className="idea-btn">
+        {/* BUTTON → CONTACT PAGE */}
+        <Link to="/contact" className="idea-btn">
           TELL US
-        </button>
+        </Link>
       </div>
 
     </section>
@@ -31,3 +32,41 @@ const IdeaSection = () => {
 };
 
 export default IdeaSection;
+
+
+
+
+
+// import "../styles/IdeaSection.css";
+
+
+// const IdeaSection = () => {
+//   return (
+//     <section className="idea-section">
+      
+//       {/* Background Video */}
+//       <video
+//         className="idea-video"
+//         src="/videos/idea-bg.mp4"
+//         autoPlay
+//         loop
+//         muted
+//         playsInline
+//       />
+
+//       {/* Overlay Content */}
+//       <div className="idea-content">
+//         <h1>
+//           Have <br /> an idea?
+//         </h1>
+
+//         <button className="idea-btn">
+//           TELL US
+//         </button>
+//       </div>
+
+//     </section>
+//   );
+// };
+
+// export default IdeaSection;

@@ -1,0 +1,62 @@
+.company-clients {
+  padding: 140px 80px;
+  background: #fff;
+}
+
+.company-clients h2 {
+  font-size: 88px;
+  font-weight: 700;
+  line-height: 1.05;
+  max-width: 900px;
+  margin-bottom: 120px;
+}
+
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 120px;
+  column-gap: 80px;
+}
+
+.client-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.client-card img {
+  max-width: 180px;
+  width: 100%;
+  opacity: 0.9;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 1200px) {
+  .company-clients h2 {
+    font-size: 64px;
+  }
+}
+
+@media (max-width: 900px) {
+  .clients-grid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .company-clients {
+    padding: 80px 20px;
+  }
+
+  .company-clients h2 {
+    font-size: 42px;
+    margin-bottom: 60px;
+  }
+
+  .clients-grid {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+  }
+}

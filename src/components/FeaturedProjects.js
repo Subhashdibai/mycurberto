@@ -1,19 +1,16 @@
-// import { useNavigate } from "react-router-dom";
 import "../styles/FeaturedProjects.css";
 
 const projects = [
-  
- {
+  {
     src: "/projects/phone.mp4",
     title: "E-Commerce App",
     desc: "UX · UI Design",
   },
-   {
+  {
     src: "/projects/dashboard.mp4",
     title: "Dashboard",
     desc: "Web Application",
   },
-
   {
     src: "/projects/app1.mp4",
     title: "Mobile Banking",
@@ -24,8 +21,7 @@ const projects = [
     title: "UI Motion",
     desc: "Interaction Design",
   },
-
-    {
+  {
     src: "/projects/punto.mp4",
     title: "Punto Pago",
     desc: "The First Super-App in Latin America",
@@ -35,12 +31,11 @@ const projects = [
     title: "3D Product",
     desc: "Visual Experience",
   },
-    {
+  {
     src: "/projects/ice.mp4",
     title: "Iceberg",
     desc: "3D Motion Design",
   },
- 
   {
     src: "/projects/animation.mp4",
     title: "Brand Animation",
@@ -72,51 +67,172 @@ export default function FeaturedProjects() {
         {projects.map((item, index) => (
           <div
             key={index}
-            className={`featured-card 
-                ${
-                     item.title === "Mobile Banking" ||
-      item.title === "3D Product" ||
-    //   item.title === "Final Concept"||
-      item.title === "Marketing Website"
-        ? "small-height"
-        : ""
-
-                }
-
-
+            className={`featured-card
+              ${
+                item.title === "Mobile Banking" ||
+                item.title === "3D Product" ||
+                item.title === "Marketing Website"
+                  ? "small-height"
+                  : ""
+              }
               ${index % 2 === 0 ? "offset-up" : "offset-down"}
-           `}
+            `}
           >
             <div className="service-card cursor-target">
-            <div className="media-box">
-              <video
-                src={item.src}
-                autoPlay
-                muted
-                loop
-                playsInline
-              />
-            </div>
+              <div className="media-box">
+                <video
+                  src={item.src}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                />
+              </div>
             </div>
 
+            {/* TEXT CONTENT */}
             <div className="card-content">
               <h3>{item.title}</h3>
               <p>{item.desc}</p>
             </div>
           </div>
         ))}
-
-
-
       </div>
+
       <div className="view-all-wrapper">
-  <a href="/projects" className="view-all-btn">
-    View all projects
-  </a>
-</div>
+        <a href="/projects" className="view-all-btn">
+          View all projects
+        </a>
+      </div>
     </section>
   );
 }
+
+
+
+
+
+
+
+// import { useNavigate } from "react-router-dom";
+// import "../styles/FeaturedProjects.css";
+
+// const projects = [
+  
+//  {
+//     src: "/projects/phone.mp4",
+//     title: "E-Commerce App",
+//     desc: "UX · UI Design",
+//   },
+//    {
+//     src: "/projects/dashboard.mp4",
+//     title: "Dashboard",
+//     desc: "Web Application",
+//   },
+
+//   {
+//     src: "/projects/app1.mp4",
+//     title: "Mobile Banking",
+//     desc: "Product Design · Development",
+//   },
+//   {
+//     src: "/projects/ui-motion.mp4",
+//     title: "UI Motion",
+//     desc: "Interaction Design",
+//   },
+
+//     {
+//     src: "/projects/punto.mp4",
+//     title: "Punto Pago",
+//     desc: "The First Super-App in Latin America",
+//   },
+//   {
+//     src: "/projects/3d.mp4",
+//     title: "3D Product",
+//     desc: "Visual Experience",
+//   },
+//     {
+//     src: "/projects/ice.mp4",
+//     title: "Iceberg",
+//     desc: "3D Motion Design",
+//   },
+ 
+//   {
+//     src: "/projects/animation.mp4",
+//     title: "Brand Animation",
+//     desc: "Motion Graphics",
+//   },
+//   {
+//     src: "/projects/website.mp4",
+//     title: "Marketing Website",
+//     desc: "Web Design",
+//   },
+//   {
+//     src: "/projects/loop.mp4",
+//     title: "Loop Video",
+//     desc: "Creative Coding",
+//   },
+//   {
+//     src: "/projects/final.mp4",
+//     title: "Final Concept",
+//     desc: "Digital Product",
+//   },
+// ];
+
+// export default function FeaturedProjects() {
+//   return (
+//     <section className="featured-wrapper">
+//       <h2 className="featured-title">Featured projects</h2>
+
+//       <div className="featured-grid">
+//         {projects.map((item, index) => (
+//           <div
+//             key={index}
+//             className={`featured-card 
+//                 ${
+//                      item.title === "Mobile Banking" ||
+//       item.title === "3D Product" ||
+//     //   item.title === "Final Concept"||
+//       item.title === "Marketing Website"
+//         ? "small-height"
+//         : ""
+
+//                 }
+
+
+//               ${index % 2 === 0 ? "offset-up" : "offset-down"}
+//            `}
+//           >
+//             <div className="service-card cursor-target">
+//             <div className="media-box">
+//               <video
+//                 src={item.src}
+//                 autoPlay
+//                 muted
+//                 loop
+//                 playsInline
+//               />
+//             </div>
+//             </div>
+
+//             <div className="card-content">
+//               <h3>{item.title}</h3>
+//               <p>{item.desc}</p>
+//             </div>
+//           </div>
+//         ))}
+
+
+
+//       </div>
+//       <div className="view-all-wrapper">
+//   <a href="/projects" className="view-all-btn">
+//     View all projects
+//   </a>
+// </div>
+//     </section>
+//   );
+// }
 
 
 // import "../styles/FeaturedProjects.css";
