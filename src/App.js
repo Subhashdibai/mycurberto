@@ -20,6 +20,7 @@ import Contact from "./pages/Contact/Contact";
 import VideoPage from "./pages/VideoPage";
 
 import FloatingContact from "./components/FloatingContact/FloatingContact";
+import BlogDetail from "./pages/Blog/BlogDetail";
 
 function App() {
   return (
@@ -56,6 +57,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/video" element={<VideoPage />} />
+          <Route path="/blog/:id" element={<BlogDetail />} />
         </Routes>
       </main>
     </BrowserRouter>
