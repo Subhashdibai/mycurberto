@@ -1,8 +1,8 @@
 .video-section {
   position: relative;
   width: 100%;
-  height: 120vh;
-  margin: 140px 0 0;
+  height: 120vw;
+  margin: 140px 0 180px;
 
   cursor: none;
   display: flex;
@@ -14,14 +14,14 @@
 
 /* FULL BLEED WRAPPER */
 .video-wrapper {
-  width: 160vw;                /* 🔥 Cuberto wide look */
+
+  width: 160vw;               
   height: 100%;
   border-radius: 700px;
   overflow: hidden;
   background: black;
 }
 
-/* VIDEO FILLS ENTIRE WRAPPER */
 .video-wrapper video {
   width: 100%;
   height: 100%;
@@ -30,7 +30,7 @@
   display: block;
 }
 
-/* CURSOR */
+
 .play-cursor {
   position: fixed;
   width: 90px;
@@ -116,7 +116,7 @@
 }
 
 .video-wrapper {
-  width: 400%;                  
+ 3 width: 400%;                  
   height: 100%;
 
   border-radius: 760px;          

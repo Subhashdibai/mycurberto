@@ -58,7 +58,7 @@
 }
 
 .featured-card.small-height .media-box {
-  height: 720px;              /* smaller cards */
+  height: 720px;            
 }
 
 .media-box img,
@@ -69,7 +69,7 @@
   display: block;
 }
 
-/* TEXT */
+
 .card-content {
   margin-top: 26px;
 }

@@ -30,7 +30,7 @@ export default function Navbar() {
   return (
     <header className={`navbar ${show ? "show" : "hide"}`}>
   <div className="navbar-inner">
-    <div className="logo">cuberto</div>
+    <div className="logo">Algomindz</div>
 
     <nav className="nav-menu">
       <NavLink to="/services">Services</NavLink>

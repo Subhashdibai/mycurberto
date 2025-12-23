@@ -7,9 +7,14 @@
   background: #fff;
   z-index: 999;
   display: flex;
+    backdrop-filter: blur(12px);
   justify-content: center;
   transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
 }
+.nav-menu a:hover {
+  transform: translateY(-15%);
+}
+
 
 .navbar.show {
   transform: translateY(0);
